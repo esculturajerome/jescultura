@@ -1,0 +1,461 @@
+/*
+	3. Sidebar
+*/
+
+#sidebar {
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+
+#sidebar .sidebar-inner {
+    padding-right: 30px;
+}
+
+#sidebar .logo {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 0;
+    border: none;
+}
+
+#sidebar .logo img{
+    width: 100%;
+}
+
+#sidebar nav {
+    padding: 25px 0 10px;
+    color: #0e0e0e;
+}
+
+#sidebar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar nav ul li a, #sidebar nav ul li span {
+    display: inline-block;
+    padding: 6px 0;
+    color: #0e0e0e;
+    text-decoration: none;
+    -webkit-transition: color 100ms;
+            transition: color 100ms;
+    border: none;
+    font-weight: 300;
+}
+
+#sidebar nav ul li a.current, #sidebar nav ul li span.current, #sidebar ul li a span.current {
+    color: #48ba86;
+}
+
+#sidebar nav ul li a:hover, #sidebar nav ul li span:hover {
+    color: #48ba86;
+    cursor: pointer;
+}
+
+#sidebar nav ul li a:hover:before, #sidebar nav ul li span:hover:before {
+    background-color: #48ba86;
+}
+
+#sidebar nav ul li.dropdown span {
+    position: relative;
+}
+
+#sidebar nav ul li.dropdown span:after, #sidebar nav ul li.dropdown span:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    margin: auto -13px auto auto;
+    display: inline-block;
+    width: 7px;
+    height: 1px;
+    background-color: #0e0e0e;
+    -webkit-transition: background-color 100ms, -webkit-transform 200ms;
+            transition: background-color 100ms, -webkit-transform 200ms;
+            transition: transform 200ms, background-color 100ms;
+            transition: transform 200ms, background-color 100ms, -webkit-transform 200ms;
+}
+
+#sidebar nav ul li.dropdown span:before {
+    margin-right: -10px;
+    width: 1px;
+    height: 7px;
+}
+
+#sidebar nav ul li.dropdown span.current:after,
+#sidebar nav ul li.dropdown span.current:before {
+    background-color: #48ba86;
+}
+
+#sidebar nav ul li.dropdown span:hover:after,
+#sidebar nav ul li.dropdown span:hover:before {
+    background-color: #48ba86;
+}
+
+#sidebar nav ul li.dropdown ul {
+    display: none;
+}
+
+#sidebar nav ul li.dropdown ul li {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 0;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(1) {
+    -webkit-transition: opacity 200ms 100ms, -webkit-transform 400ms 100ms;
+            transition: opacity 200ms 100ms, -webkit-transform 400ms 100ms;
+            transition: transform 400ms 100ms, opacity 200ms 100ms;
+            transition: transform 400ms 100ms, opacity 200ms 100ms, -webkit-transform 400ms 100ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(2) {
+    -webkit-transition: opacity 200ms 200ms, -webkit-transform 400ms 200ms;
+            transition: opacity 200ms 200ms, -webkit-transform 400ms 200ms;
+            transition: transform 400ms 200ms, opacity 200ms 200ms;
+            transition: transform 400ms 200ms, opacity 200ms 200ms, -webkit-transform 400ms 200ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(3) {
+    -webkit-transition: opacity 200ms 300ms, -webkit-transform 400ms 300ms;
+            transition: opacity 200ms 300ms, -webkit-transform 400ms 300ms;
+            transition: transform 400ms 300ms, opacity 200ms 300ms;
+            transition: transform 400ms 300ms, opacity 200ms 300ms, -webkit-transform 400ms 300ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(4) {
+    -webkit-transition: opacity 200ms 400ms, -webkit-transform 400ms 400ms;
+            transition: opacity 200ms 400ms, -webkit-transform 400ms 400ms;
+            transition: transform 400ms 400ms, opacity 200ms 400ms;
+            transition: transform 400ms 400ms, opacity 200ms 400ms, -webkit-transform 400ms 400ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(5) {
+    -webkit-transition: opacity 200ms 500ms, -webkit-transform 400ms 500ms;
+            transition: opacity 200ms 500ms, -webkit-transform 400ms 500ms;
+            transition: transform 400ms 500ms, opacity 200ms 500ms;
+            transition: transform 400ms 500ms, opacity 200ms 500ms, -webkit-transform 400ms 500ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(6) {
+    -webkit-transition: opacity 200ms 600ms, -webkit-transform 400ms 600ms;
+            transition: opacity 200ms 600ms, -webkit-transform 400ms 600ms;
+            transition: transform 400ms 600ms, opacity 200ms 600ms;
+            transition: transform 400ms 600ms, opacity 200ms 600ms, -webkit-transform 400ms 600ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(7) {
+    -webkit-transition: opacity 200ms 700ms, -webkit-transform 400ms 700ms;
+            transition: opacity 200ms 700ms, -webkit-transform 400ms 700ms;
+            transition: transform 400ms 700ms, opacity 200ms 700ms;
+            transition: transform 400ms 700ms, opacity 200ms 700ms, -webkit-transform 400ms 700ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(8) {
+    -webkit-transition: opacity 200ms 800ms, -webkit-transform 400ms 800ms;
+            transition: opacity 200ms 800ms, -webkit-transform 400ms 800ms;
+            transition: transform 400ms 800ms, opacity 200ms 800ms;
+            transition: transform 400ms 800ms, opacity 200ms 800ms, -webkit-transform 400ms 800ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(9) {
+    -webkit-transition: opacity 200ms 900ms, -webkit-transform 400ms 900ms;
+            transition: opacity 200ms 900ms, -webkit-transform 400ms 900ms;
+            transition: transform 400ms 900ms, opacity 200ms 900ms;
+            transition: transform 400ms 900ms, opacity 200ms 900ms, -webkit-transform 400ms 900ms;
+}
+
+#sidebar nav ul li.dropdown ul li:nth-child(10) {
+    -webkit-transition: opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
+            transition: opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
+            transition: transform 400ms 1000ms, opacity 200ms 1000ms;
+            transition: transform 400ms 1000ms, opacity 200ms 1000ms, -webkit-transform 400ms 1000ms;
+}
+
+#sidebar nav ul li.dropdown ul li a {
+    font-size: 13px;
+}
+
+#sidebar nav ul li.dropdown ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1px;
+    background-color: #0e0e0e;
+    margin-bottom: 4px;
+    margin-right: 6px;
+    -webkit-transition: background-color 100ms;
+            transition: background-color 100ms;
+}
+
+#sidebar nav ul li.dropdown ul li a.current:before {
+    background-color: #48ba86;
+}
+
+#sidebar nav ul li.dropdown ul li a:hover:before {
+    background-color: #48ba86;
+}
+
+#sidebar nav ul li.dropdown.expanded span:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+#sidebar nav ul li.dropdown.expanded ul li {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(1) {
+    -webkit-transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+            transition: opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+            transition: transform 200ms 100ms, opacity 200ms 100ms;
+            transition: transform 200ms 100ms, opacity 200ms 100ms, -webkit-transform 200ms 100ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(2) {
+    -webkit-transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+            transition: opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+            transition: transform 200ms 200ms, opacity 200ms 200ms;
+            transition: transform 200ms 200ms, opacity 200ms 200ms, -webkit-transform 200ms 200ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(3) {
+    -webkit-transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+            transition: opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+            transition: transform 200ms 300ms, opacity 200ms 300ms;
+            transition: transform 200ms 300ms, opacity 200ms 300ms, -webkit-transform 200ms 300ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(4) {
+    -webkit-transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+            transition: opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+            transition: transform 200ms 400ms, opacity 200ms 400ms;
+            transition: transform 200ms 400ms, opacity 200ms 400ms, -webkit-transform 200ms 400ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(5) {
+    -webkit-transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+            transition: opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+            transition: transform 200ms 500ms, opacity 200ms 500ms;
+            transition: transform 200ms 500ms, opacity 200ms 500ms, -webkit-transform 200ms 500ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(6) {
+    -webkit-transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+            transition: opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+            transition: transform 200ms 600ms, opacity 200ms 600ms;
+            transition: transform 200ms 600ms, opacity 200ms 600ms, -webkit-transform 200ms 600ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(7) {
+    -webkit-transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+            transition: opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+            transition: transform 200ms 700ms, opacity 200ms 700ms;
+            transition: transform 200ms 700ms, opacity 200ms 700ms, -webkit-transform 200ms 700ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(8) {
+    -webkit-transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+            transition: opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+            transition: transform 200ms 800ms, opacity 200ms 800ms;
+            transition: transform 200ms 800ms, opacity 200ms 800ms, -webkit-transform 200ms 800ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(9) {
+    -webkit-transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+            transition: opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+            transition: transform 200ms 900ms, opacity 200ms 900ms;
+            transition: transform 200ms 900ms, opacity 200ms 900ms, -webkit-transform 200ms 900ms;
+}
+
+#sidebar nav ul li.dropdown.expanded ul li:nth-child(10) {
+    -webkit-transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+            transition: opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+            transition: transform 200ms 1000ms, opacity 200ms 1000ms;
+            transition: transform 200ms 1000ms, opacity 200ms 1000ms, -webkit-transform 200ms 1000ms;
+}
+
+#sidebar .basket-open {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-bottom: none;
+}
+
+#sidebar .basket-open .cart-indicator {
+    position: relative;
+    overflow: hidden;
+}
+
+#sidebar .basket-open .cart-indicator i {
+    font-size: 16px;
+    color: #bfbfbf;
+    -webkit-transition: color 200ms;
+            transition: color 200ms;
+}
+
+#sidebar .basket-open .cart-indicator span {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #48ba86;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+}
+
+#sidebar .basket-open:hover .cart-indicator i {
+    color: #6d6d6d;
+}
+
+#sidebar .copyright {
+    padding-top: 20px;
+    color: #bfbfbf;
+    font-size: 13px;
+}
+
+.widgets-block {
+    margin: 50px 0;
+}
+
+.widgets-block .widget {
+    margin: 0 0 80px;
+}
+
+.widgets-block .widget:last-of-type {
+    margin-bottom: 0;
+}
+
+.widgets-block .widget .title {
+    display: block;
+    margin: 0 0 5px !important;
+    color: #bfbfbf !important;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    letter-spacing: 0.4px !important;
+    text-transform: uppercase !important;
+}
+
+.widgets-block .widget .title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(191, 191, 191, 0.12);
+    margin-top: 3px;
+}
+
+.widgets-block .widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widgets-block .widget ul li {
+    display: block;
+    padding: 5px 0;
+}
+
+.widgets-block .widget.filter li {
+    color: #0e0e0e !important;
+    -webkit-transition: color 100ms;
+            transition: color 100ms;
+}
+
+.widgets-block .widget.filter li.active {
+    color: #48ba86 !important;
+}
+
+.widgets-block .widget.filter li:hover {
+    color: #48ba86 !important;
+    cursor: pointer !important;
+}
+
+.widgets-block .widget.twitter ul li {
+    line-height: 1.7;
+    font-size: 13px;
+    padding: 15px 0;
+}
+
+.widgets-block .widget.twitter ul li:first-child {
+    padding-top: 0;
+}
+
+.widgets-block .widget.twitter ul li:last-child {
+    padding-bottom: 0;
+}
+
+.widgets-block .widget.twitter ul li .time {
+    display: block;
+    margin: 7px 0 0;
+    color: #bfbfbf;
+    font-size: 13px;
+    border: none;
+}
+
+.widgets-block .widget.twitter ul li .time:hover {
+    color: #48ba86;
+}
+
+.widgets-block .widget.recent-projects ul li a {
+    display: block !important;
+    border: none !important;
+    color: #6d6d6d !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+
+.widgets-block .widget.recent-projects ul li a:hover {
+    color: #48ba86 !important;
+}
+
+.widgets-block .widget.blog-categories ul li a {
+    display: block;
+    border: none;
+    color: #6d6d6d !important;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.widgets-block .widget.blog-categories ul li a:hover {
+    color: #48ba86;
+}
+
+.widgets-block .widget.tags ul li {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.widgets-block .widget.tags ul li a {
+    display: block;
+    color: #bfbfbf;
+    border: none;
+    background-color: rgba(191, 191, 191, 0.1);
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 150px;
+    white-space: nowrap;
+    -webkit-transition: background-color 200ms, color 200ms;
+            transition: background-color 200ms, color 200ms;
+}
+
+.widgets-block .widget.tags ul li a:hover {
+    color: #6d6d6d;
+    background-color: rgba(191, 191, 191, 0.2);
+}
