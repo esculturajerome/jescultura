@@ -25,9 +25,9 @@ class SidebarProject extends React.Component{
                     >
                       {props => (
                         <div style={props}>
-                          <li><Link to="/"  ><span>Work</span></Link></li>
-                          <li><Link to="/about"  ><span>About</span></Link></li>
-
+                          <li><Link to="/"  ><span>Personal Projects</span></Link></li>
+                          <li><Link to="/works" ><span>Work Projects</span></Link></li>
+                          <li><Link to="/about" ><span>About</span></Link></li>
                         </div>
                       )}
                     </Spring>
