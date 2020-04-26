@@ -49,9 +49,14 @@ class About extends React.Component{
                         <h2>Experience</h2>
                       </div>
                     </div>
-                    <div className="row">
+                    <div className="row experience">
                       <div className="col-md-3">
-                        <h4>Full Stack Developer</h4>
+                        <h4>Full Stack Developer
+                          <p>August 2019 - current </p>
+                          <p>
+                            <a href="https://www.august99.com/" rel="noopener noreferrer" target="_blank">August 99 Inc. - Canstar Division</a>
+                          </p>
+                        </h4>
                         <ul>
                           <li>Develop fronted website architecture and design user interactions on web pages.</li>
                           <li>Ensure cross-platform optimization for mobile phones.</li>
@@ -60,34 +65,45 @@ class About extends React.Component{
                           <li>End to end web development process – Setup dev environment, code – Unit testing.</li>
                           <li>Develop new features and provide maintenance and support services on existing code.</li>
                         </ul>
-                        <ul><a href="https://www.august99.com/" rel="noopener noreferrer" target="_blank">August 99</a></ul>
                       </div>
                       <div className="col-md-3">
-                        <h4>Web Developer</h4>
+                        <h4>Front-end Web Developer
+                          <p>July 2018 - August 2019 </p>
+                          <p>
+                              <a href="https://www.august99.com/" rel="noopener noreferrer" target="_blank">August 99 Inc. - Agent Image Division </a>
+                          </p>
+                        </h4>
                         <ul>
                           <li>Theme creation involving converting designs into modular templates that can be readily used in a project.</li>
                           <li>Database design based on client requirements</li>
                           <li>Custom plugin development for integrating various APIs.</li>
                           <li>Ensuring site compatibility across required browsers.</li>
                         </ul>
-                        <ul><a href="twc.html" rel="noopener noreferrer" target="_blank">TESDA Women Center</a></ul>
                       </div>
                       <div className="col-md-3">
-                        <h4>Computer Instructor</h4>
+                        <h4>Computer Instructor
+                          <p>April 2017 - June 2017 </p>
+                          <p>
+                            <a href="https://www.children.org/" rel="noopener noreferrer" target="_blank">Children International</a>
+                          </p>
+                        </h4>
                         <ul>
                           <li>Design, facilitate, and teach the computer instruction component and prepare execute lesson plans, assigning tasks, and evaluating student work and progress.</li>
                         </ul>
-                        <ul><a href="https://www.children.org/" rel="noopener noreferrer" target="_blank">Children International</a></ul>
                       </div>
                       <div className="col-md-3">
-                        <h4>VBA Specialist - Intern</h4>
+                        <h4>VBA Specialist - Intern
+                          <p>June 2017 - November 2017 </p>
+                          <p>
+                          <a href="http://manulife-global-resourcing.force.com/manila/Manila---About-MBPS-Manila-" rel="noopener noreferrer" target="_blank">Manulife Business Processing Services</a>
+                          </p>
+                        </h4>
                         <ul>
                           <li>Maintain and support existing systems, tools, and macros.</li>
                           <li>Develop interfaces for departmental SharePoint sites.</li>
                           <li>Ability to manage multiple tasks, analytic and critical thinking skills.</li>
                           <li>Organize large amounts of raw data to ease analysis for project managers and management.</li>
                         </ul>
-                        <ul><a href="http://manulife-global-resourcing.force.com/manila/Manila---About-MBPS-Manila-" rel="noopener noreferrer" target="_blank">Manulife Business Processing Services</a></ul>
                       </div>
                     </div>
                   </div>
@@ -120,6 +136,15 @@ class About extends React.Component{
                         <h4>Agency Youth Council Vice President</h4>
                         <p>Responsible in working closely with Agency Youth Council and Youth Program Coordinator In the planning and preparation of the needed Council funds to be allotted to project implementation in <a href="https://www.children.org/" rel="noopener noreferrer" target="_blank">Children International</a>.</p>
                         <p>Keeps all financial records (liquidations) and other documents properly filed for accounting and other auditing purposes to be submitted to specific Field Officer and to the Youth Program Coordinator.</p>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="end-page">
+                        <div className="col-sm-3">
+                          <Link to="/" className="projects-navigation previous-project">
+                            <div className="arrow arrow-left"></div>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProjectList from './../components/ProjectList';
 import Sidebar from './../components/Sidebar';
+import { Spring } from 'react-spring/renderprops';
 
 class Home extends Component {
   state = {
@@ -123,7 +124,16 @@ class Home extends Component {
       				<div className="row">
       					<div className="col-md-12">
       						<div id="works-grid">
-      							<ProjectList  projects={this.state.projects} />
+                  <Spring
+                    from={{ opacity: 0, marginRight: -70 }}
+                    to={{ opacity: 1, marginRight: 0 }}
+                    >
+                    { props => (
+                      <div style={props}>
+                        <ProjectList  projects={this.state.projects} />
+                      </div>
+                    )}
+                  </Spring>
       						</div>
       					</div>
       				</div>

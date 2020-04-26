@@ -11,6 +11,12 @@
 
 }
 
+#works-grid ul{
+    list-style: none !important;
+    padding: 0 0 5px 0 !important;
+    margin: 0 !important;
+}
+
 #works-grid .works-item {
     display: block;
     position: relative;

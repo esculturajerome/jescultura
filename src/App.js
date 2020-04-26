@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './pages/Home';
 import About from './pages/About';
+import Works from './pages/Works';
 import ProjectPage from './pages/ProjectPage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -35,6 +36,7 @@ class App extends Component {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
+                <Route path='/works' component={Works} />
                 <Route path='/project/:name/' component={ProjectPage} />
                 <Route component={NoMatch} />
               </Switch>

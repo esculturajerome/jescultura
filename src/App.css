@@ -254,3 +254,20 @@ input:focus, textarea:focus {
 #about-page #main .text .links li a:hover {
     border-color: #48ba86;
 }
+
+#about-page #main .about-container .experience ul {
+    margin: 0 !important;
+    padding: 0 !important
+}
+
+#about-page #main .about-container .experience h4 p {
+    font-size: 13px !important;
+    font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif !important;
+    font-weight: 300 !important;
+}
+
+#about-page #main .about-container .experience h4 p a {
+    font-size: 15px !important;
+    font-family: 'Roboto', 'Tahoma', 'Arial', sans-serif !important;
+    font-weight: 300 !important;
+}
