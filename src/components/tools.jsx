@@ -21,6 +21,7 @@ class Tools extends Component {
         "NodeJS",
         "APIs",
         "Docker",
+        "Wordpress",
         "MongoDB",
         "Adobe CC",
         "FIgma",
@@ -28,12 +29,27 @@ class Tools extends Component {
     },
   ];
   render() {
+    const toolsStyle = {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      flexItem: "center",
+    };
     return (
       <div className="row">
         {this.toolsList.map(({ tools }, i) => (
-          <div key={i}>
+          <div key={i} style={toolsStyle}>
             {tools.map((x, j) => (
-              <span key={j}>{x}</span>
+              <div
+                style={{
+                  margin: "3px 15px",
+                  fontSize: "13px",
+                  color: "#6d6d6d",
+                }}
+                key={j}
+              >
+                {x}
+              </div>
             ))}
           </div>
         ))}
