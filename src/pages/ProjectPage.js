@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import SidebarProject from './../components/SidebarProject';
-import { Spring } from 'react-spring/renderprops';
-import './../components/project.css';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import SidebarProject from "./../components/SidebarProject";
+import { Spring } from "react-spring/renderprops";
+import "./../components/project.css";
+import { Link } from "react-router-dom";
 
 class ProjectPage extends Component {
   state = {
@@ -58,139 +58,92 @@ class ProjectPage extends Component {
       projectImg5: projProjectImg5,
       projectImg6: projProjectImg6,
     });
-
   }
 
   render() {
+    const {
+      id,
+      category,
+      dateCreated,
+      desc1,
+      desc2,
+      desc3,
+      name,
+      projectImg1,
+      projectImg2,
+      projectImg3,
+      projectImg4,
+      projectImg5,
+      projectImg6,
+      url,
+    } = this.state;
     return (
       <div>
         <SidebarProject />
-          <Spring key={ this.state.id }
+        <Spring
+          key={id}
           from={{ opacity: 0, marginRight: -70 }}
           to={{ opacity: 1, marginRight: 0 }}
-          >
-            {props => (
-              <div id="project-page" style={props}>
-                <div id="main">
-                  <div className="main-outer">
-                    <div className="container-fluid">
-                      <div className="row">
-                        <div className="col-md-5">
-                          <div className="gallery">
+        >
+          {(props) => (
+            <div id="project-page" style={props}>
+              <div id="main">
+                <div className="main-outer">
+                  <div className="container-fluid">
+                    <div className="row">
+                      <div className="col-md-5">
+                        <div className="gallery">
+                          {projectImg1 && <img src={projectImg1} alt="" />}
+                          {projectImg2 && <img src={projectImg2} alt="" />}
+                          {projectImg3 && <img src={projectImg3} alt="" />}
+                          {projectImg4 && <img src={projectImg4} alt="" />}
+                          {projectImg5 && <img src={projectImg5} alt="" />}
+                          {projectImg6 && <img src={projectImg6} alt="" />}
+                        </div>
+                      </div>
+                      <div className="col-md-6 offset-1">
+                        <div className="description">
+                          <h1>{name}</h1>
+                          <ul className="categories">
+                            <li>{category}</li>
+                          </ul>
+                          {desc1 && <p>{desc1}</p>}
+                          {desc2 && <p>{desc2}</p>}
+                          {desc3 && <p>{desc3}</p>}
+                          <div className="row">
+                            <div className="col-md-6">
+                              <h5 className="subtitle">Date</h5>
+                              <p>{dateCreated}.</p>
+                            </div>
                             {(() => {
-                              if (this.state.projectImg6 !== 'undefined') {
+                              if (url !== "") {
                                 return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                    <img src={ this.state.projectImg2 } alt="" />
-                                    <img src={ this.state.projectImg3 } alt="" />
-                                    <img src={ this.state.projectImg4 } alt="" />
-                                    <img src={ this.state.projectImg5 } alt="" />
-                                    <img src={ this.state.projectImg6 } alt="" />
-                                  </div>
-                                );
-                              } else if (this.state.projectImg5 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                    <img src={ this.state.projectImg2 } alt="" />
-                                    <img src={ this.state.projectImg3 } alt="" />
-                                    <img src={ this.state.projectImg4 } alt="" />
-                                    <img src={ this.state.projectImg5 } alt="" />
-                                  </div>
-                                );
-                              } else if (this.state.projectImg4 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                    <img src={ this.state.projectImg2 } alt="" />
-                                    <img src={ this.state.projectImg3 } alt="" />
-                                    <img src={ this.state.projectImg4 } alt="" />
-                                  </div>
-                                );
-                              } else if (this.state.projectImg3 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                    <img src={ this.state.projectImg2 } alt="" />
-                                    <img src={ this.state.projectImg3 } alt="" />
-                                  </div>
-                                );
-                              } else if (this.state.projectImg2 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                    <img src={ this.state.projectImg2 } alt="" />
+                                  <div className="col-md-6">
+                                    <h5 className="subtitle">Link</h5>
+                                    <a
+                                      href={url}
+                                      rel="noopener noreferrer"
+                                      target="_blank"
+                                    >
+                                      {name} {category}
+                                    </a>
                                   </div>
                                 );
                               } else {
-                                return (
-                                  <div>
-                                    <img src={ this.state.projectImg1 } alt="" />
-                                  </div>
-                                );
+                                return null;
                               }
                             })()}
                           </div>
                         </div>
-                        <div className="col-md-6 offset-1">
-                          <div className="description">
-                            <h1>{ this.state.name }</h1>
-                            <ul className="categories">
-                              <li>{ this.state.category }</li>
-                            </ul>
-                            {(() => {
-                              if (this.state.desc3 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <p>{ this.state.desc1 }</p>
-                                    <p>{ this.state.desc2 }</p>
-                                    <p>{ this.state.desc3 }</p>
-                                  </div>
-                                );
-                              } else if (this.state.desc2 !== 'undefined') {
-                                return (
-                                  <div>
-                                    <p> { this.state.desc1 } </p>
-                                    <p> { this.state.desc2 } </p>
-                                  </div>
-                                );
-                              } else {
-                                return (
-                                  <div>
-                                    <p> { this.state.desc1 } </p>
-                                  </div>
-                                );
-                              }
-                            })()}
-                            <div className="row">
-                              <div className="col-md-6">
-                                <h5 className="subtitle">Date</h5>
-                                <p>{ this.state.dateCreated }.</p>
-                              </div>
-                                {(() => {
-                                  if (this.state.url !== '') {
-                                    return (
-                                      <div className="col-md-6">
-                                        <h5 className="subtitle">Link</h5>
-                                        <a href={ this.state.url } rel="noopener noreferrer" target="_blank">{ this.state.name } { this.state.category }</a>
-                                      </div>
-                                    );
-                                  } else {
-                                    return (
-                                     null
-                                   );
-                                  }
-                                })()}
-                             </div>
-                          </div>
-                          <div className="row">
-                            <div className="end-page">
-                              <div className="col-sm-3">
-                                <Link to="/" className="projects-navigation previous-project">
-                                    <div className="arrow arrow-left"></div>
-                                </Link>
-                              </div>
+                        <div className="row">
+                          <div className="end-page">
+                            <div className="col-sm-3">
+                              <Link
+                                to="/"
+                                className="projects-navigation previous-project"
+                              >
+                                <div className="arrow arrow-left"></div>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -199,8 +152,9 @@ class ProjectPage extends Component {
                   </div>
                 </div>
               </div>
-            )}
-          </Spring>
+            </div>
+          )}
+        </Spring>
       </div>
     );
   }
