@@ -40,7 +40,7 @@ class Sidebar extends React.Component {
                     </li>
                   </ul>
                 </nav>
-                <Contacts footer={"escultura & 2020"} />
+                <Contacts footer={"escultura &copy; 2020"} />
               </div>
             </header>
           </div>
