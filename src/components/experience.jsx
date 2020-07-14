@@ -5,7 +5,7 @@ class Experience extends Component {
     {
       id: 1,
       title: "Full Stack Developer",
-      startDate: "July 2019",
+      startDate: "July 2018",
       endDate: "current",
       companyName: "August 99 Inc. - Canstar Division",
       companyUrl: "https://www.august99.com",
@@ -18,20 +18,7 @@ class Experience extends Component {
         "Develop new features and provide maintenance and support services on existing code.",
       ],
     },
-    {
-      id: 2,
-      title: "Front-end Web Developer",
-      startDate: "May 2018",
-      endDate: "July 2019",
-      companyName: "TESDA Women's Center",
-      companyUrl: "http://twc.tesda.gov.ph/",
-      desc: [
-        "Theme creation involving converting designs into modular templates that can be readily used in a project.",
-        "Database design based on client requirements.",
-        "Custom plugin development for integrating various APIs.",
-        "Ensuring site compatibility across required browsers.",
-      ],
-    },
+
     {
       id: 3,
       title: "Computer Instructor",
@@ -65,7 +52,7 @@ class Experience extends Component {
         <div className="about-container">
           <div className="row">
             <div className="col-md-12">
-              <h2>Experience</h2>
+              <h2>Work Background</h2>
             </div>
           </div>
           <div className="row experience">
@@ -74,7 +61,7 @@ class Experience extends Component {
                 { title, startDate, endDate, companyName, companyUrl, desc },
                 i
               ) => (
-                <div key={i} className="col-md-3">
+                <div key={i} className="col-md-4">
                   <h4 className="title">{title}</h4>
                   <p>
                     {startDate} - {endDate}
@@ -94,6 +81,48 @@ class Experience extends Component {
                 </div>
               )
             )}
+          </div>
+          <div className="row">
+            <div className="col-md-12">
+              <h2>Personal Projects</h2>
+            </div>
+          </div>
+          <div className="row experience">
+            <div className="col-md-6">
+              <h4 className="title">Web Developer</h4>
+              <p>February 2020 - July 2020</p>
+              <a
+                href="https://rnit-tesda.tech/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Romblon National Institute of Technology
+              </a>
+              <ul>
+                <li>
+                  Designed, developed and host a website using Wordpress and
+                  Godaddy to help their students inquire and enroll online.
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <h4 className="title">Web Developer</h4>
+              <p>June 2018 - August 2018</p>
+              <a
+                href="https://twc.tesda.gov.ph/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                TESDA Women’s Center
+              </a>
+              <ul>
+                <li>
+                  Designed and developed a Full stack Website using H TML 5 ,
+                  Bootstrap and P H P. This helps the agency to be awarded as ‘
+                  Gold ’ during their 2018 Annual Monitoring and Evaluation.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </React.Fragment>

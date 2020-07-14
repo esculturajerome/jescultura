@@ -36,7 +36,7 @@ class Tools extends Component {
       flexItem: "center",
     };
     return (
-      <div className="row">
+      <div className="row mt-4">
         {this.toolsList.map(({ tools }, i) => (
           <div key={i} style={toolsStyle}>
             {tools.map((x, j) => (
