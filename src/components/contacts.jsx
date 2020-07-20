@@ -47,7 +47,7 @@ const Contacts = ({ footer }) => {
           </ul>
         </div>
       </div>
-      {footer && <p className="copyright"> escultura &copy; 2020.</p>}
+      {footer && <p className="copyright"> escultura &copy; 2020</p>}
     </React.Fragment>
   );
 };

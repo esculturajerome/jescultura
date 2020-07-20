@@ -7,6 +7,20 @@ class Home extends Component {
   state = {
     projects: [
       {
+        id: 11,
+        dateCreated: "Under Development",
+        name: "Youth Power Club",
+        category: "Website",
+        url: "https://youthpower.netlify.app/",
+        desc1: "Where every book lover is enjoined in the circle.",
+        desc2: "-Reactjs and Expressjs",
+        desc3: "",
+        coverImage: "/img/works/yp.jpg",
+        projectImg1: "/img/project/yp1.png",
+        projectImg2: "/img/project/yp2.png",
+        projectImg3: "/img/project/yp3.jpg",
+      },
+      {
         id: 10,
         dateCreated: "July 2020",
         name: "Romblon National Institute of Technology",
@@ -26,7 +40,7 @@ class Home extends Component {
         dateCreated: "June 2020",
         name: "Panahon PWA",
         category: "Website",
-        url: "https://loving-darwin-81639a.netlify.app/",
+        url: "https://panahonph.netlify.app/",
         desc1:
           "A Progressive Web Application for getting information about the weather.",
         desc2:
@@ -153,7 +167,7 @@ class Home extends Component {
         dateCreated: "March 2018",
         name: "Booklandia",
         category: "Website",
-        url: "https://wizardly-lovelace-b20163.netlify.app/",
+        url: "https://booklandia.netlify.app/",
         desc1: "Is an educational app empowering children through reading.",
         desc2:
           "It enhance the way kids read books, using the latest technology of AR and 3D models, Story books can transform into interactive materials and help the kids to deeply understand the story.",

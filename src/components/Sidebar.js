@@ -18,9 +18,7 @@ class Sidebar extends React.Component {
                     alt="Jerome Escultura Profile"
                   />
                 </Link>
-                <p className="intro">
-                  A Minimalist tech enthusiast from Manila
-                </p>
+                <p className="intro">A Minimalist tech enthusiast.</p>
                 <nav>
                   <ul>
                     <li>

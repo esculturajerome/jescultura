@@ -44,7 +44,7 @@ class SidebarProject extends React.Component {
                     </Spring>
                   </ul>
                 </nav>
-                <p className="copyright">escultura &copy; 2020.</p>
+                <p className="copyright">escultura &copy; 2020</p>
               </div>
             </header>
           </div>
