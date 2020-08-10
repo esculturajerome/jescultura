@@ -7,6 +7,20 @@ class Home extends Component {
   state = {
     projects: [
       {
+        id: 12,
+        dateCreated: "August 2020",
+        name: "Netflix Clone",
+        category: "Website",
+        url: "https://netflix-mockup.web.app/",
+        desc1: "Netflix website clone with trailer",
+        desc2: "-Reactjs and Firebase",
+        desc3: "",
+        coverImage: "/img/works/netflix.png",
+        projectImg1: "/img/project/netflix.png",
+        projectImg2: "/img/project/netflix2.png",
+        projectImg3: "",
+      },
+      {
         id: 11,
         dateCreated: "Under Development",
         name: "Youth Power Club",
