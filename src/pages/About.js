@@ -35,20 +35,17 @@ class About extends React.Component {
                             I am a full stack developer with a passion for
                             graphic and web design. With a great deal of
                             experience under my belt using web technologies like
-                            Angular and React.js, I have contributed to the
-                            development and maintenance of numerous websites
-                            such as Canstar, Ogroup,The Noel Team, and Chen
-                            Agency to name a few.
+                            Angular and ReactJS, I have contributed to the
+                            development and maintenance of numerous websites.
                           </p>
                           <p>
                             I believe I have strong leadership qualities and I
                             am also a good follower. By participating in various
                             youth programs for an international non-government
                             organization, I have developed an outstanding
-                            communication and management skills.{" "}
+                            communication and management skills.
                           </p>
                           <p>
-                            {" "}
                             See my recents
                             <Link to="/"> Works</Link>
                           </p>

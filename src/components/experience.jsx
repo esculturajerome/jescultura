@@ -6,7 +6,7 @@ class Experience extends Component {
       id: 1,
       title: "Full Stack Developer",
       startDate: "July 2018",
-      endDate: "current",
+      endDate: "October 2020",
       companyName: "August 99 Inc. - Canstar Division",
       companyUrl: "https://www.august99.com",
       desc: [

@@ -26,11 +26,11 @@ class Sidebar extends React.Component {
                         <span>Personal Projects</span>
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/works">
                         <span>Work Projects</span>
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/about">
                         <span>About</span>

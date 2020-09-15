@@ -227,10 +227,10 @@ class Home extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div id="works-grid">
-                    <Spring
-                      from={{ opacity: 0, marginRight: -70 }}
-                      to={{ opacity: 1, marginRight: 0 }}
-                    >
+                  <Spring
+                    from={{ marginRight: -70 }}
+                    to={{  marginRight: 0 }}
+                  >
                       {(props) => (
                         <div style={props}>
                           <ProjectList projects={this.state.projects} />
