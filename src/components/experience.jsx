@@ -4,6 +4,21 @@ class Experience extends Component {
   experiencesList = [
     {
       id: 1,
+      title: "Web Developer",
+      startDate: "October 2020",
+      endDate: "Present",
+      companyName: "IBM - International Business Machines",
+      companyUrl: "https://www.ibm.com/",
+      desc: [
+        "Support development efforts by providing technical expertise and programming skills as needed",
+        "Develop web pages/web tools/authoring tools to enable efficient sharing of assets, materials, etc., for the development team",
+        "Provide input around tool selection, system setup for solutions",
+        "Ensure best practices regarding content management and the use of selected learning technology tools in accordance with IBM standards and guidelines",
+        "Submit best practices, related findings as a result of project outcomes to contribute to tools requirements and feature updates as needed."
+      ],
+    },
+    {
+      id: 2,
       title: "Full Stack Developer",
       startDate: "July 2018",
       endDate: "October 2020",
@@ -18,20 +33,8 @@ class Experience extends Component {
         "Develop new features and provide maintenance and support services on existing code.",
       ],
     },
-
     {
       id: 3,
-      title: "Computer Instructor",
-      startDate: "April 2017",
-      endDate: "June 2017",
-      companyName: "Children International Inc.",
-      companyUrl: "https://www.children.org/",
-      desc: [
-        "Design, facilitate, and teach the computer instruction component and prepare execute lesson plans, assigning tasks, and evaluating student work and progress.",
-      ],
-    },
-    {
-      id: 4,
       title: "VBA Specialist - Intern",
       startDate: "June 2017",
       endDate: "November 2017",

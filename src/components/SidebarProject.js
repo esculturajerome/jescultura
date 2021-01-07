@@ -14,7 +14,7 @@ class SidebarProject extends React.Component {
                   <img className="img-responsive" src="/logo.svg" alt="Logo" />
                 </Link>
                 <p className="intro">
-                  A Minimalist tech enthusiast from Manila
+                  A Minimalist tech enthusiast
                 </p>
                 <nav>
                   <ul>
@@ -44,7 +44,7 @@ class SidebarProject extends React.Component {
                     </Spring>
                   </ul>
                 </nav>
-                <p className="copyright">escultura &copy; 2020</p>
+                <p className="copyright">escultura &copy; 2021</p>
               </div>
             </header>
           </div>
