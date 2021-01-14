@@ -22,7 +22,7 @@ class About extends React.Component {
                       <div className="col-md-4">
                         <Link to="/">
                           <img
-                            src="img/about/Jerome_Escultura.jpeg"
+                            src="img/about/Jerome_Escultura.png"
                             alt=""
                             className="img-responsive"
                           />

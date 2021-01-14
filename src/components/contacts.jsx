@@ -10,11 +10,11 @@ const Contacts = ({ footer }) => {
             <li>
               Email:{" "}
               <a
-                href="mailto:esculturajerome@jescultura.com"
+                href="mailto:esculturajerome@gmail.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                esculturajerome@jescultura.com
+                esculturajerome@gmail.com
               </a>
               <br />
               Github:{" "}

@@ -7,20 +7,6 @@ class Home extends Component {
   state = {
     projects: [
       {
-        id: 13,
-        dateCreated: "October 2020",
-        name: "My Baby Harry's Website",
-        category: "Website",
-        url: "https://meetbabyharry.netlify.app/",
-        desc1: "Harry was born last Saturday, October 3 at 4:00 AM PHT at Bernardino General Hospital. He’s so excited to see the world and only spent 28 weeks inside Mama Gel’s womb.",
-        desc2: "Reactjs",
-        desc3: "",
-        coverImage: "/img/works/baby.png",
-        projectImg1: "/img/project/baby1.png",
-        projectImg2: "/img/project/baby2.png",
-        projectImg3: "",
-      },
-      {
         id: 12,
         dateCreated: "August 2020",
         name: "Netflix Clone",
@@ -241,10 +227,7 @@ class Home extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div id="works-grid">
-                  <Spring
-                    from={{ marginRight: -70 }}
-                    to={{  marginRight: 0 }}
-                  >
+                    <Spring from={{ marginRight: -70 }} to={{ marginRight: 0 }}>
                       {(props) => (
                         <div style={props}>
                           <ProjectList projects={this.state.projects} />
