@@ -32,11 +32,14 @@ class About extends React.Component {
                         <div className="text">
                           <h1>Jerome Escultura</h1>
                           <p>
-                            I am a full stack developer with a passion for
-                            graphic and web design. With a great deal of
-                            experience under my belt using web technologies like
-                            Angular and ReactJS, I have contributed to the
-                            development and maintenance of numerous websites.
+                            I am a full stack developer currently based in
+                            Manila, Philippines with a passion for graphic and
+                            web design. With a great deal of experience under my
+                            belt using web technologies like Angular and
+                            React.js, I have contributed to the development and
+                            maintenance of numerous websites such as IBM
+                            Training, Canstar, Ogroup,The Noel Team, and Chen
+                            Agency to name a few.
                           </p>
                           <p>
                             I believe I have strong leadership qualities and I

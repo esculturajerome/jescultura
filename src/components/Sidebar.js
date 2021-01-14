@@ -14,7 +14,7 @@ class Sidebar extends React.Component {
                 <Link to="/" className="logo smooth-leavess">
                   <img
                     className="img-responsive"
-                    src="/img/profile.png"
+                    src="/img/profile.jpeg"
                     alt="Jerome Escultura Profile"
                   />
                 </Link>
