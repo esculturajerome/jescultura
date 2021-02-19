@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Works from "./pages/Works";
 import GetToKnowMe from "./pages/GetToKnowMe";
 import ProjectPage from "./pages/ProjectPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
