@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ProjectList from "../components/ProjectList";
-import Sidebar from "../components/Sidebar";
 import { Spring } from "react-spring/renderprops";
 
 class GetToKnowMe extends Component {
