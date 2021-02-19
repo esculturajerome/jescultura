@@ -1,15 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const ProjectList = ({ projects }) => {
   return (
     <div>
-      {projects.map(project => {
-              const nameTrim = project.name.replace(/\s/g, '');
+      {projects.map((project) => {
+        const nameTrim = project.name.replace(/\s/g, "");
 
-              return project.category !== '' ? (
-                <div className="project" key={project.id}>
-                  <Link className="works-item"  key={project.id} to={{
+        return project.category !== "" ? (
+          <div className="project" key={project.id}>
+            {project.url !== "" ? (
+              <Link
+                className="works-item"
+                key={project.id}
+                to={{
                   pathname: `project/${nameTrim}`,
                   state: {
                     projID: `${project.id}`,
@@ -27,24 +31,40 @@ const ProjectList = ({ projects }) => {
                     projProjectImg4: `${project.projectImg4}`,
                     projProjectImg5: `${project.projectImg5}`,
                     projProjectImg6: `${project.projectImg6}`,
-                  }, }}>
-                    <div className="picture">
-                      <div className="content">
-                        <div className="text">
-                          <h2>{project.name}</h2>
-                          <ul>
-                            <li>{project.category}</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <img src={project.coverImage} alt=" " />
+                  },
+                }}
+              >
+                <div className="picture">
+                  <div className="content">
+                    <div className="text">
+                      <h2>{project.name}</h2>
+                      <ul>
+                        <li>{project.category}</li>
+                      </ul>
                     </div>
-                  </Link>
+                  </div>
+                  <img src={project.coverImage} alt=" " />
                 </div>
-              ) :  null;
-            })
-          }
-     </div>
+              </Link>
+            ) : (
+              <div className="works-item">
+                <div className="picture">
+                  <div className="content">
+                    <div className="text">
+                      <h2>{project.name}</h2>
+                      <ul>
+                        <li>{project.category}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <img src={project.coverImage} alt=" " />
+                </div>
+              </div>
+            )}
+          </div>
+        ) : null;
+      })}
+    </div>
   );
 };
 

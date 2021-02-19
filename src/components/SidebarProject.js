@@ -13,9 +13,7 @@ class SidebarProject extends React.Component {
                 <Link to="/" className="logo smooth-leavess">
                   <img className="img-responsive" src="/logo.svg" alt="Logo" />
                 </Link>
-                <p className="intro">
-                  A Minimalist tech enthusiast
-                </p>
+                <p className="intro">A Minimalist tech enthusiast</p>
                 <nav>
                   <ul>
                     <Spring
@@ -37,6 +35,11 @@ class SidebarProject extends React.Component {
                           <li>
                             <Link to="/about">
                               <span>About</span>
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/gettoknowme">
+                              <span>Get to know me</span>
                             </Link>
                           </li>
                         </div>
