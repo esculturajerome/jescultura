@@ -103,37 +103,37 @@ class GetToKnowMe extends Component {
       },
       {
         id: 17,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/17.jpg",
         url:"",
       },{
         id: 18,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/18.jpg",
         url:"",
       },{
         id: 19,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/19.jpg",
         url:"",
       },{
         id: 20,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/20.jpg",
         url:"",
       },{
         id: 21,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/21.jpg",
         url:"",
       },{
         id: 22,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/22.jpg",
         url:"",
       },{
         id: 23,
-        name: "Youth Org",
+        name: "Pets",
         coverImage: "/img/pets/23.jpg",
         url:"",
       },{
