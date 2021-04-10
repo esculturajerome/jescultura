@@ -37,11 +37,11 @@ class SidebarProject extends React.Component {
                               <span>About</span>
                             </Link>
                           </li>
-                          <li>
+                          {/* <li>
                             <Link to="/gettoknowme">
                               <span>Get to know me</span>
                             </Link>
-                          </li>
+                          </li> */}
                         </div>
                       )}
                     </Spring>
