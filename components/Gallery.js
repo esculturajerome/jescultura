@@ -1,6 +1,5 @@
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Gallery({ images }) {
   const propsSpring = useSpring({
@@ -17,10 +16,11 @@ export default function Gallery({ images }) {
               <a target="_blank" href={image} rel="noopener noreferrer">
                 <Image
                   src={image}
-                  alt="Picture of the author"
+                  alt="Project Screenshot"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top"
+                  priority
                 />
               </a>
             </div>
