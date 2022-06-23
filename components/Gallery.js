@@ -13,8 +13,8 @@ export default function Gallery({ images }) {
       <animated.div style={propsSpring}>
         <div>
           {images.map((image, i) => (
-            <div className="h-64 w-96 relative mb-2" key={i}>
-              <a target="_blank" href={image}>
+            <div className="h-72 w-full relative mb-2" key={i}>
+              <a target="_blank" href={image} rel="noopener noreferrer">
                 <Image
                   src={image}
                   alt="Picture of the author"

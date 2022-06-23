@@ -8,7 +8,7 @@ export default function SideBar() {
     router.push(e);
   };
   return (
-    <div className="md:col-span-full lg:col-span-1 my-12 lg:my-0">
+    <div className="md:col-span-full lg:col-span-1 my-12 lg:my-0 font-Roboto font-extralight">
       <div className="hidden lg:inline">
         <img
           src="/images/profile.jpeg"
@@ -30,7 +30,7 @@ export default function SideBar() {
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">
         <div
           onClick={() => handleClick("/about")}
-          className="text-sm cursor-pointer font-medium  hover:underline underline-offset-2"
+          className="text-sm cursor-pointer   hover:underline underline-offset-2"
         >
           About me
         </div>
@@ -38,7 +38,7 @@ export default function SideBar() {
       <div className="mt-2 flex justify-center lg:justify-start mb-3">
         <div
           onClick={() => handleClick("/")}
-          className="text-sm cursor-pointer first:font-medium hover:underline underline-offset-2"
+          className="text-sm cursor-pointer first: hover:underline underline-offset-2"
         >
           My Projects
         </div>
@@ -66,7 +66,7 @@ export default function SideBar() {
       </div>
       {/* <nav className="flex flex-col items-center space-y-3 ">
         <Link href="/">
-          <div className="font-medium text-sm cursor-pointer">Work</div>
+          <div className=" text-sm cursor-pointer">Work</div>
         </Link>
         <ul className="grid grid-cols-3 divide-x text-center ">
           <Link href="/website">
@@ -81,7 +81,7 @@ export default function SideBar() {
         </ul>
         <ul>
           <Link href="/about">
-            <li className="font-medium text-sm cursor-pointer">About</li>
+            <li className=" text-sm cursor-pointer">About</li>
           </Link>
         </ul>
       </nav> */}

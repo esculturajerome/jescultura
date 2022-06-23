@@ -12,6 +12,10 @@ module.exports = {
         textMain: "#2f2f2f",
       },
     },
+    fontFamily: {
+      Lora: ["Lora", "serif"],
+      Roboto: ["Roboto", "sans-serif"],
+    },
   },
   plugins: [],
 };
