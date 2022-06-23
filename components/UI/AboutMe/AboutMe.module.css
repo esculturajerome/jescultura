@@ -1,12 +1,12 @@
 .AboutSection {
   display: flex;
   justify-content: center;
-  background: #000;
+  background: #f8f8f8;
   width: 100%;
 }
 
 .AboutSection p {
-  color: #fff;
+  color: #2f2f2f;
 }
 
 .AboutMe {

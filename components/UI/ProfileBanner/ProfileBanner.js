@@ -34,7 +34,7 @@ export default function ProfileBanner() {
           </animated.div>
         </div>
         <animated.div style={SpringDelay} className={Class.ProfileImage}>
-          <img src="https://placekitten.com/g/300/300" alt="Jerome Escultura" />
+          <img src="/images/profile.jpeg" alt="Jerome Escultura" />
         </animated.div>
       </div>
     </animated.div>

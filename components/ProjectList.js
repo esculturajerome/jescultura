@@ -1,11 +1,7 @@
 import ProjectCard from "./ProjectCard";
-
-import style from "./ProjectList.module.css";
 import { useSpring, animated } from "react-spring";
 
-export default function ProjectList(props) {
-  const { items } = props;
-
+export default function ProjectList({ items }) {
   const propsSpring = useSpring({
     opacity: 1,
     marginRight: 0,
@@ -13,7 +9,7 @@ export default function ProjectList(props) {
   });
 
   return (
-    <div className={style.project_grid}>
+    <div className="columns-1 sm:columns-2 md:columns-3">
       <animated.div style={propsSpring}>
         {items.map((project) => {
           return (

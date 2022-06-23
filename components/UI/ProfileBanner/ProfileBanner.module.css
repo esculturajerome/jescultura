@@ -1,7 +1,7 @@
 .ProfileBanner {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background: #f3f3f3;
+  background: #fff;
   place-items: center;
 }
 
@@ -33,7 +33,6 @@
 .ProfileImage img {
   width: 100%;
   max-width: 450px;
-  padding-top: 3rem;
 }
 
 @media (max-width: 768px) {
