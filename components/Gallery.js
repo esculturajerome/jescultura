@@ -12,8 +12,8 @@ export default function Gallery({ images }) {
       <animated.div style={propsSpring}>
         <div>
           {images.map((image, i) => (
-            <div className="h-72 w-full relative mb-2" key={i}>
-              <a target="_blank" href={image} rel="noopener noreferrer">
+            <a target="_blank" href={image} rel="noopener noreferrer" key={i}>
+              <div className="h-72 w-full relative mb-2">
                 <Image
                   src={image}
                   alt="Project Screenshot"
@@ -22,8 +22,8 @@ export default function Gallery({ images }) {
                   objectPosition="top"
                   priority
                 />
-              </a>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
       </animated.div>

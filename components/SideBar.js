@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Contacts from "./Contacts";
@@ -10,20 +11,24 @@ export default function SideBar() {
   return (
     <div className="md:col-span-full lg:col-span-1 my-12 lg:my-0 font-Roboto font-extralight">
       <div className="hidden lg:inline">
-        <img
+        <Image
           src="/images/profile.jpeg"
+          width={230}
+          height={330}
+          objectFit="contain"
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
-          className="cursor-pointer"
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
       </div>
 
       <div className="flex justify-center lg:hidden ">
-        <img
+        <Image
           src="/images/logo.svg"
+          width={130}
+          height={130}
+          objectFit="contain"
           alt="Jerome Icon"
-          className="cursor-pointer"
           onClick={() => handleClick("/")}
         />
       </div>
