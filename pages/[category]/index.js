@@ -7,7 +7,6 @@ import Head from "next/head";
 export default function ProjectDetailPage() {
   const router = useRouter();
   const projectCategory = router.query.category;
-
   const projects = getProjectByCategory(projectCategory);
 
   if (!projects) {
@@ -17,10 +16,10 @@ export default function ProjectDetailPage() {
   return (
     <div className="px-4 lg:pt-8 lg:px-8">
       <Head>
-        <title>Jerome Escultura</title>
+        <title>Jerome Escultura | {projectCategory}</title>
         <meta
           property="og:title"
-          content="My Online Portfolio using Nextjs"
+          content={`Here are my ${projectCategory} projects`}
           key="title"
         />
       </Head>
