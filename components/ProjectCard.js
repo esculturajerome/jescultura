@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
             </div>
           </div>
           <img
-            src={coverImage}
+            src={`/${coverImage}`}
             alt={name}
             className="w-full max-w-full overflow-hidden break-before-avoid relative"
           />

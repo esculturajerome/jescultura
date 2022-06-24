@@ -20,6 +20,7 @@ export default function SideBar() {
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
           loader={imageLoader}
+          className="cursor-pointer hover:opacity-70"
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
       </div>
@@ -33,12 +34,13 @@ export default function SideBar() {
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
           loader={imageLoader}
+          className="cursor-pointer hover:opacity-70"
         />
       </div>
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">
         <div
           onClick={() => handleClick("/about")}
-          className="text-sm cursor-pointer   hover:underline underline-offset-2"
+          className="text-sm cursor-pointer   hover:underline hover:text-mainColor underline-offset-2"
         >
           About me
         </div>
@@ -46,7 +48,7 @@ export default function SideBar() {
       <div className="mt-2 flex justify-center lg:justify-start mb-3">
         <div
           onClick={() => handleClick("/")}
-          className="text-sm cursor-pointer first: hover:underline underline-offset-2"
+          className="text-sm cursor-pointer first: hover:underline hover:text-mainColor underline-offset-2"
         >
           My Projects
         </div>
@@ -55,19 +57,19 @@ export default function SideBar() {
       <div className="grid lg:gap-3 grid-cols-3 lg:grid-cols-1 divide-x lg:divide-x-0 text-center lg:text-left  max-w-sm mx-auto lg:ml-3">
         <div
           onClick={() => handleClick("/website")}
-          className="text-sm cursor-pointer font-light hover:underline underline-offset-2"
+          className="text-sm cursor-pointer font-light hover:underline hover:text-mainColor underline-offset-2"
         >
           Website
         </div>
         <div
           onClick={() => handleClick("/design")}
-          className="text-sm cursor-pointer font-light hover:underline underline-offset-2"
+          className="text-sm cursor-pointer font-light hover:underline hover:text-mainColor underline-offset-2"
         >
           Design
         </div>
         <div
           onClick={() => handleClick("/application")}
-          className="text-sm cursor-pointer font-light hover:underline underline-offset-2"
+          className="text-sm cursor-pointer font-light hover:underline hover:text-mainColor underline-offset-2"
         >
           Application
         </div>
