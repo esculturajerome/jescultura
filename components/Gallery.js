@@ -13,7 +13,13 @@ export default function Gallery({ images }) {
       <animated.div style={propsSpring}>
         <div>
           {images.map((image, i) => (
-            <a target="_blank" href={image} rel="noopener noreferrer" key={i}>
+            <a
+              target="_blank"
+              href={image}
+              rel="noopener noreferrer"
+              key={i}
+              className="hover:opacity-70"
+            >
               <div className="h-72 w-full relative mb-2">
                 <Image
                   src={image}
