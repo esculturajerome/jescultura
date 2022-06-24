@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Contacts from "./Contacts";
+import imageLoader from "./loader";
 
 export default function SideBar() {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
+          loader={imageLoader}
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
       </div>
@@ -30,6 +32,7 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
+          loader={imageLoader}
         />
       </div>
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">

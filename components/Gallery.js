@@ -1,5 +1,6 @@
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
+import imageLoader from "./loader";
 
 export default function Gallery({ images }) {
   const propsSpring = useSpring({
@@ -21,6 +22,7 @@ export default function Gallery({ images }) {
                   objectFit="cover"
                   objectPosition="top"
                   priority
+                  loader={imageLoader}
                 />
               </div>
             </a>
