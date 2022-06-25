@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectCard(props) {
-  const { name, id, category, coverImage } = props;
+export default function ProjectCard({ name, id, category, coverImage }) {
   // const convertedDate = new Date(dateCreated).toLocaleDateString("en-US", {
   //   month: "long",
   //   year: "numeric",

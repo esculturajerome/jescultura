@@ -11,10 +11,10 @@ export default function ProjectList({ items }) {
   return (
     <div className="columns-1 sm:columns-2 md:columns-3">
       <animated.div style={propsSpring}>
-        {items.map((project) => {
+        {items.map((project, i) => {
           return (
             <ProjectCard
-              key={project.id}
+              key={i}
               id={project.id}
               category={project.category}
               coverImage={project.coverImage}

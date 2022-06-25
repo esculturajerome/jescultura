@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-5">
         <SideBar />
-        <main className="lg:col-span-4 lg:ml-16">
+        <main className="lg:col-span-4 lg:ml-16 mb-12">
           <ProjectList items={AllProjects} />
         </main>
       </div>

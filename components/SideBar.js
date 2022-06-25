@@ -3,6 +3,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Contacts from "./Contacts";
 
+import profilePic from "../public/images/profile.jpeg";
+import logo from "../public/images/logo.png";
+
 export default function SideBar() {
   const router = useRouter();
   const handleClick = (e) => {
@@ -12,10 +15,7 @@ export default function SideBar() {
     <div className="md:col-span-full lg:col-span-1 my-12 lg:my-0 font-Roboto font-extralight">
       <div className="hidden lg:inline">
         <Image
-          src="/images/profile.jpeg"
-          width={230}
-          height={330}
-          objectFit="contain"
+          src={profilePic}
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
           className="cursor-pointer hover:opacity-70"
@@ -25,10 +25,7 @@ export default function SideBar() {
       </div>
       <div className="flex justify-center lg:hidden ">
         <Image
-          src="/images/logo.svg"
-          width={130}
-          height={130}
-          objectFit="contain"
+          src={logo}
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
           className="cursor-pointer hover:opacity-70"

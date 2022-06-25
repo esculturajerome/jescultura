@@ -17,7 +17,7 @@ export default function Details(props) {
   return (
     <animated.div
       style={propsSpring}
-      className="py-8 lg:pt-12 pl-4 md:pl-8 space-y-6 "
+      className="py-8 lg:pt-12 pl-4 md:pl-8 space-y-6 font-Roboto"
     >
       <h2 className="text-2xl font-Lora">{name}</h2>
       <p className="capitalize font-light text-[#bfbfbf]">{category}</p>

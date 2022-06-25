@@ -11,7 +11,7 @@ export default function Gallery({ images }) {
   if (images) {
     return (
       <animated.div style={propsSpring}>
-        <div>
+        <div className="mb-12">
           {images.map((image, i) => (
             <a
               target="_blank"
@@ -20,7 +20,7 @@ export default function Gallery({ images }) {
               key={i}
               className="hover:opacity-70"
             >
-              <div className="h-64 w-96 relative mb-2">
+              <div className="h-72 w-full relative mb-2">
                 <Image
                   src={image}
                   alt="Project Screenshot"
