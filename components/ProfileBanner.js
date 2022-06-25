@@ -7,7 +7,7 @@ export default function ProfileBanner() {
   const router = useRouter();
   const handleClick = (e) => {
     e.preventDefault();
-    router.push(e);
+    router.push("/");
   };
 
   const propsSpring = useSpring({
@@ -38,7 +38,7 @@ export default function ProfileBanner() {
         >
           <div
             className=" gap-4 hidden lg:flex cursor-pointer hover:opacity-70"
-            onClick={() => handleClick("/")}
+            onClick={handleClick}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
