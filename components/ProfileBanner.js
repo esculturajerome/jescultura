@@ -10,27 +10,20 @@ export default function ProfileBanner() {
     router.push("/");
   };
 
-  const propsSpring = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    delay: 400,
-  });
-
   const SpringDelay = useSpring({
     opacity: 1,
     from: { opacity: 0 },
-    delay: 750,
+    delay: 200,
   });
 
   const SpringTop = useSpring({
     opacity: 1,
     marginTop: 24,
     from: { opacity: 0, marginTop: -20 },
-    delay: 650,
   });
 
   return (
-    <animated.main style={propsSpring}>
+    <main>
       <div className="grid lg:grid-cols-2 h-[100vh] w-full font-Roboto font-light  lg:overflow-hidden">
         <animated.div
           style={SpringTop}
@@ -84,6 +77,6 @@ export default function ProfileBanner() {
           </div>
         </animated.div>
       </div>
-    </animated.main>
+    </main>
   );
 }
