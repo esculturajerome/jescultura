@@ -27,6 +27,7 @@ export default function Gallery({ images }) {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top"
+                  priority
                 />
               </div>
             </a>

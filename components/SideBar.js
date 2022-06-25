@@ -19,6 +19,7 @@ export default function SideBar() {
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
           className="cursor-pointer hover:opacity-70"
+          priority
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
       </div>
@@ -31,6 +32,7 @@ export default function SideBar() {
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
           className="cursor-pointer hover:opacity-70"
+          priority
         />
       </div>
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">
