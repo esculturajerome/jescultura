@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Contacts from "./Contacts";
+import imageLoader from "./loader";
 
 export default function SideBar() {
   const router = useRouter();
@@ -18,8 +19,13 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
+<<<<<<< HEAD
           className="cursor-pointer hover:opacity-70"
           priority
+=======
+          loader={imageLoader}
+          className="cursor-pointer hover:opacity-70"
+>>>>>>> 785f3bb83e1b3d57a6cc435a210bf5fef6dce08b
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
       </div>
@@ -31,8 +37,13 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
+<<<<<<< HEAD
           className="cursor-pointer hover:opacity-70"
           priority
+=======
+          loader={imageLoader}
+          className="cursor-pointer hover:opacity-70"
+>>>>>>> 785f3bb83e1b3d57a6cc435a210bf5fef6dce08b
         />
       </div>
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">
@@ -46,7 +57,11 @@ export default function SideBar() {
       <div className="mt-2 flex justify-center lg:justify-start mb-3">
         <div
           onClick={() => handleClick("/")}
+<<<<<<< HEAD
           className="text-sm cursor-pointer hover:underline hover:text-mainColor underline-offset-2"
+=======
+          className="text-sm cursor-pointer first: hover:underline hover:text-mainColor underline-offset-2"
+>>>>>>> 785f3bb83e1b3d57a6cc435a210bf5fef6dce08b
         >
           My Projects
         </div>

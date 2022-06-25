@@ -7,7 +7,6 @@ import Head from "next/head";
 export default function ProjectDetailPage() {
   const router = useRouter();
   const projectCategory = router.query.category;
-
   const projects = getProjectByCategory(projectCategory);
 
   if (!projects) {

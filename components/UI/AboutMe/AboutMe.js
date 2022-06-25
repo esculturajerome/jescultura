@@ -30,11 +30,19 @@ export default function AboutMe() {
             <p>
               Email:{"  "}
               <a
+<<<<<<< HEAD
                 href="mailto:jerome@jescultura.com"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 jerome@jescultura.com
+=======
+                href="mailto:esculturajerome@gmail.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                esculturajerome@gmail.com
+>>>>>>> 785f3bb83e1b3d57a6cc435a210bf5fef6dce08b
               </a>
               <br />
               Whatsapp:{"  "}
