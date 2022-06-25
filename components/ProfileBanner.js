@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 export default function ProfileBanner() {
   const router = useRouter();
   const handleClick = (e) => {
+    e.preventDefault();
     router.push(e);
   };
 

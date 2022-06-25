@@ -9,6 +9,7 @@ import logo from "../public/images/logo.png";
 export default function SideBar() {
   const router = useRouter();
   const handleClick = (e) => {
+    e.preventDefault();
     router.push(e);
   };
   return (
