@@ -1,5 +1,6 @@
 import Class from "./AboutMe.module.css";
 import { useSpring, animated } from "react-spring";
+import Head from "next/head";
 
 export default function AboutMe() {
   const SpringDelay = useSpring({
