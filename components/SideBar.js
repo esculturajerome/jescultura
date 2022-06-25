@@ -18,7 +18,6 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Profile"
           onClick={() => handleClick("/")}
-          loader={imageLoader}
           className="cursor-pointer hover:opacity-70"
         />
         <p className="font-light mt-8">A Minimalist tech enthusiast.</p>
@@ -31,7 +30,6 @@ export default function SideBar() {
           objectFit="contain"
           alt="Jerome Icon"
           onClick={() => handleClick("/")}
-          loader={imageLoader}
           className="cursor-pointer hover:opacity-70"
         />
       </div>

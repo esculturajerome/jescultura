@@ -26,7 +26,7 @@ export default function Contacts() {
     },
   ];
   return (
-    <div className="text-center text-sm font-light lg:text-left">
+    <div className="text-center text-sm font-light lg:text-left font-Roboto">
       <p className="mb-2 mt-14 text-gray-500 uppercase tracking-wider font-medium">
         Contact Information
       </p>
