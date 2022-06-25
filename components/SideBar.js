@@ -24,7 +24,7 @@ export default function SideBar() {
         <Image
           src={profilePic}
           alt="Jerome Profile"
-          onClick={() => handleClick(e, "/")}
+          onClick={(e) => handleClick(e, "/")}
           className="cursor-pointer hover:opacity-70"
           priority
         />
@@ -34,14 +34,14 @@ export default function SideBar() {
         <Image
           src={logo}
           alt="Jerome Icon"
-          onClick={() => handleClick("/")}
+          onClick={(e) => handleClick(e, "/")}
           className="cursor-pointer hover:opacity-70"
           priority
         />
       </div>
       <div className="mt-12 flex  justify-center lg:justify-start mb-4 border-b pb-4">
         <div
-          onClick={(e) => handleClick(e, "/")}
+          onClick={(e) => handleClick(e, "/about")}
           className="text-sm cursor-pointer   hover:underline hover:text-mainColor underline-offset-2"
         >
           About me
