@@ -17,11 +17,11 @@ export default function Details(props) {
   return (
     <animated.div
       style={propsSpring}
-      className="py-8 lg:pt-12 pl-4 md:pl-0 lg:pl-8 space-y-6 "
+      className="py-8 lg:pt-12 pl-4 md:pl-8 space-y-6 "
     >
-      <h2 className="text-2xl">{name}</h2>
+      <h2 className="text-2xl font-Lora">{name}</h2>
       <p className="capitalize font-light text-[#bfbfbf]">{category}</p>
-      <p className="font-light">{desc}</p>
+      <p className="font-light pr-16">{desc}</p>
       <div className="flex justify-between pr-6 lg:pr-28">
         <div>
           {convertedDate == "Invalid Date" ? (

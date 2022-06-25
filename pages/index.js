@@ -7,7 +7,7 @@ export default function Home() {
   const AllProjects = getAllProjects();
 
   return (
-    <div className="px-4 lg:pt-8 lg:px-8">
+    <div className="px-4 lg:pt-8 lg:px-8 font-Roboto">
       <Head>
         <title>Jerome Escultura</title>
         <meta

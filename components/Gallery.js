@@ -13,17 +13,23 @@ export default function Gallery({ images }) {
       <animated.div style={propsSpring}>
         <div>
           {images.map((image, i) => (
-            <div className="h-64 w-96 relative mb-2" key={i}>
-              <a target="_blank" href={image} rel="noreferrer noopener">
+            <a
+              target="_blank"
+              href={image}
+              rel="noreferrer noopener"
+              key={i}
+              className="hover:opacity-70"
+            >
+              <div className="h-64 w-96 relative mb-2">
                 <Image
                   src={image}
-                  alt="Picture of the author"
+                  alt="Project Screenshot"
                   layout="fill"
                   objectFit="cover"
                   objectPosition="top"
                 />
-              </a>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
       </animated.div>

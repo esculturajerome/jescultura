@@ -11,6 +11,10 @@ module.exports = {
         mainColor: "#48ba86",
         textMain: "#2f2f2f",
       },
+      fontFamily: {
+        Lora: ["Lora", "serif"],
+        Roboto: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
