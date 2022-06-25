@@ -3,8 +3,8 @@ export default function Contacts() {
     {
       id: 1,
       title: "Email",
-      url: "mailto:esculturajerome@gmail.com",
-      text: "esculturajerome@gmail.com",
+      url: "mailto:jerome@jescultura.com",
+      text: "jerome@jescultura.com",
     },
     {
       id: 2,
