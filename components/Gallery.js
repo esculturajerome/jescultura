@@ -14,7 +14,7 @@ export default function Gallery({ images }) {
         <div>
           {images.map((image, i) => (
             <div className="h-64 w-96 relative mb-2" key={i}>
-              <a target="_blank" href={image}>
+              <a target="_blank" href={image} rel="noreferrer noopener">
                 <Image
                   src={image}
                   alt="Picture of the author"
