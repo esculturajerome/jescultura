@@ -20,7 +20,7 @@ export default function Gallery({ images }) {
               key={i}
               className="hover:opacity-70"
             >
-              <div className="h-72 w-full relative mb-2">
+              <div className="h-72 xl:h-96 w-full relative mb-2">
                 <Image
                   src={image}
                   alt="Project Screenshot"

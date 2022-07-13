@@ -9,7 +9,8 @@ export default function ProjectList({ items }) {
   });
 
   return (
-    <div className="columns-1 sm:columns-2 md:columns-3">
+    // <div className="columns-1 sm:columns-2 md:columns-3 ">
+    <div className="columns-3">
       <animated.div style={propsSpring}>
         {items.map((project, i) => {
           return (

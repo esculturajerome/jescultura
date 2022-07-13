@@ -9,7 +9,7 @@ export default function ProjectCard({ name, id, category, coverImage }) {
   // const nameTrim = name.replace(/\s/g, "");
 
   return (
-    <div className="group overflow-hidden relative border-none z-30 cursor-pointer mb-4">
+    <div className="group overflow-hidden relative border-none z-30 cursor-pointer mb-4 inline-block w-full">
       <Link href={`${category}/${id}`}>
         <div className="before:w-full before:h-full before:inset-0 before:bg-black/60 before:z-10 before:opacity-0 before:hover:opacity-100 before:absolute before:transform before:duration-300">
           <div className="absolute w-full top-1/2 left-0 z-10 -translate-y-[50%]">

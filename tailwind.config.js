@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "profile-bg": "url('/images/profile.jpeg')",
+      },
       colors: {
         mainColor: "#48ba86",
         textMain: "#2f2f2f",
