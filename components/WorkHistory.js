@@ -9,7 +9,7 @@ function WorkHistory() {
       position: "Web Consultant",
       date: "February 2022 — Present",
       details: [
-        "Developed MVPs website using NextJS and Tailwind Designed",
+        "Developed MVPs website using NextJS and Tailwind",
         "Designed and Developed APIs",
         "Actively focus on developing effective communication and relationship-building skills, with stakeholders, clients and team",
         "Work effectively in diverse teams within a highly inclusive team culture where everyone is supported, respected and recognized for their contribution",

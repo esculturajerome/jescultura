@@ -34,28 +34,28 @@ function Skills() {
     <div className="grid grid-cols-2 md:grid-cols-4 mt-12 gap-4">
       <ul>
         {technicals.map((item, i) => (
-          <li key={i} className="whitespace-nowrap">
+          <li key={i} className="whitespace-nowrap text-sm">
             {item},
           </li>
         ))}
       </ul>
       <ul>
         {Styles.map((item, i) => (
-          <li key={i} className="whitespace-nowrap">
+          <li key={i} className="whitespace-nowrap text-sm">
             {item},
           </li>
         ))}
       </ul>
       <ul className="">
         {Tools.map((item, i) => (
-          <li key={i} className="whitespace-nowrap">
+          <li key={i} className="whitespace-nowrap text-sm">
             {item},
           </li>
         ))}
       </ul>
       <ul className="">
         {Tools2.map((item, i) => (
-          <li key={i} className="whitespace-nowrap">
+          <li key={i} className="whitespace-nowrap text-sm">
             {item},
           </li>
         ))}
