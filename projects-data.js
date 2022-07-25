@@ -1,11 +1,41 @@
 const PROJECTS_DATA = [
   {
+    id: "14",
+    dateCreated: "2022-07",
+    name: "Innocre Blockchain Store",
+    category: "website",
+    url: "https://innocre.netlify.app/",
+    desc: "The main objective of this Project is to provide a marketplace for NFTs or non-fungible tokens using decentralized website that utilize cryptocurrency as payment solutions.Specifically, the system will support authenticate your Cryptocurrency account, convert your Cryptocurrency into Innocre Coins, buy non-fungible tokens using Innocre Coins; and use blockchain to record all transactions. Developed using NextJS, Etherium Blockchain and Deploy using Netlify",
+    coverImage: "images/works/innocre.png",
+    projectImages: [
+      "/images/project/innocre1.png",
+      "/images/project/innocre2.png",
+      "/images/project/innocre3.png",
+      "/images/project/innocre4.png",
+    ],
+  },
+  {
+    id: "13",
+    dateCreated: "2022-05",
+    name: "Juno Web Services",
+    category: "website",
+    url: "https://junowebservices.netlify.app/",
+    desc: "This project offer small business web design and development for clients. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and bring more revenue to your business. Developed using NextJS and Deploy using Netlify",
+    coverImage: "images/works/juno.png",
+    projectImages: [
+      "/images/project/juno1.png",
+      "/images/project/juno2.png",
+      "/images/project/juno3.png",
+      "/images/project/juno4.png",
+    ],
+  },
+  {
     id: "12",
     dateCreated: "2020-07",
     name: "Netflix Clone",
     category: "website",
     url: "https://netflix-mockup.web.app/",
-    desc: "Netflix website clone with trailer. -Reactjs and Firebase",
+    desc: "Netflix website clone with trailer. Developed using Reactjs and Firebase",
     coverImage: "images/works/netflix.png",
     projectImages: [
       "/images/project/netflix.png",
@@ -18,7 +48,7 @@ const PROJECTS_DATA = [
     name: "Youth Power Club",
     category: "website",
     url: "https://youthpower.netlify.app/",
-    desc: "Where every book lover is enjoined in the circle. Reactjs and Expressjs",
+    desc: "Where every book lover is enjoined in the circle. Developed using Reactjs and Expressjs",
     coverImage: "images/works/yp.jpg",
     projectImages: [
       "/images/project/yp1.png",
@@ -32,7 +62,7 @@ const PROJECTS_DATA = [
     name: "Romblon National Institute of Technology",
     category: "website",
     url: "https://rnit-tesda.tech/",
-    desc: "Designed, developed and host a website using Wordpress and Godaddy to help their students inquire and enroll online.",
+    desc: "Designed, developed and host a website using Wordpress and Godaddy to help their students inquire and enroll online. Developed using Gatsby, Tailwind and Netlify CMS",
     coverImage: "images/works/rnit.png",
     projectImages: [
       "/images/project/rnit1.png",
@@ -46,7 +76,7 @@ const PROJECTS_DATA = [
     name: "Panahon PWA",
     category: "website",
     url: "https://panahonph.netlify.app/",
-    desc: "A Progressive Web Application for getting information about the weather. Libraries and Framework used are ReactJS, Axios and React-places-autocomplete. API used for this project are Google Maps API and OpenWeather API.",
+    desc: "A Progressive Web Application for getting information about the weather. Libraries and Framework used are ReactJS, Axios and React-places-autocomplete. API used for this project are Google Maps API and OpenWeather API. Developed using React and Deploy in Netlify",
     coverImage: "images/works/panahon.png",
     projectImages: [
       "/images/project/panahon1.png",
@@ -107,7 +137,7 @@ const PROJECTS_DATA = [
     dateCreated: "2018-07",
     name: "Family Run",
     category: "design",
-    desc: "The FAMRUN project purpose of this project is to strengthen the relationship of the families in the community and encourage them to start the prevention and education about the detrimental effect of abusing drugs. FAMRUN project will help the community of Bagong Silang to strive in eradicating drug addiction through strengthening family relationships. Also, it will make our community advocates of the illegal drug free community. The event will not only bring more effective partnership within the community of Bagong Silang but also ignite the cooperation of community people to solve more pressing issues aside from drugs. Fam Run project is a second version of the 2017 SCP FunRun project which aimed to increase awareness in illegal drugs. This year, incorporating the essence of family, the FamRun will focus on family empowerment through a run and interactive activities as a start in building good family relations.",
+    desc: "The FAMRUN project purpose is to strengthen the relationship of the families in the community and encourage them to start the prevention and education about the detrimental effect of abusing drugs. FAMRUN project will help the community of Bagong Silang to strive in eradicating drug addiction through strengthening family relationships. Also, it will make our community advocates of the illegal drug free community. The event will not only bring more effective partnership within the community of Bagong Silang but also ignite the cooperation of community people to solve more pressing issues aside from drugs. Fam Run project is a second version of the 2017 SCP FunRun project which aimed to increase awareness in illegal drugs. This year, incorporating the essence of family, the FamRun will focus on family empowerment through a run and interactive activities as a start in building good family relations.",
     coverImage: "images/works/funrun.png",
     projectImages: [
       "/images/project/famrun1.png",
@@ -122,7 +152,7 @@ const PROJECTS_DATA = [
     name: "Tesda Womens Center",
     category: "website",
     url: "http://twc.tesda.gov.ph/",
-    desc: "As the lead TVET Institution of excellence in women empowerment, TESDA Women’s Center advocates and provides programs and services geared towards quality-assured, inclusive and gender-fair TVET. I provided technical expertise in the development of TWC website and made it more user-friendly, simple but attractive corporate design and more responsive to visitors of their website. I also improved its usability to have a good presentation of information and choices in a clear and concise way and proper placement of important items in appropriate areas. Part of the development requirements is also its functionality to make it more interactive which allows the visitor to respond in some way turning the visitor into a customer. ",
+    desc: "As the lead TVET Institution of excellence in women empowerment, TESDA Women’s Center advocates and provides programs and services geared towards quality-assured, inclusive and gender-fair TVET. I provided technical expertise in the development of TWC website and made it more user-friendly, simple but attractive corporate design and more responsive to visitors of their website. I also improved its usability to have a good presentation of information and choices in a clear and concise way and proper placement of important items in appropriate areas. Part of the development requirements is also its functionality to make it more interactive which allows the visitor to respond in some way turning the visitor into a customer. Developed using HTML, CSS, Bootstrap and PHP",
     coverImage: "images/works/twc.png",
     projectImages: [
       "/images/project/twc1.png",
@@ -137,7 +167,7 @@ const PROJECTS_DATA = [
     name: "Booklandia website",
     category: "website",
     url: "https://booklandia.netlify.app/",
-    desc: "Is an educational app empowering children through reading. It enhance the way kids read books, using the latest technology of AR and 3D models, Story books can transform into interactive materials and help the kids to deeply understand the story. Booklandia aim to enhance the kids reads books and encourage them to read more, by developing an application that can run both android and IOS platform, Booklandia will educate and entertain kids by importing virtual world into real world.",
+    desc: "Is an educational app empowering children through reading. It enhance the way kids read books, using the latest technology of AR and 3D models, Story books can transform into interactive materials and help the kids to deeply understand the story. Booklandia aim to enhance the kids reads books and encourage them to read more, by developing an application that can run both android and IOS platform, Booklandia will educate and entertain kids by importing virtual world into real world. Developed using HTML, CSS and Javascript",
     coverImage: "images/works/booklandia-site.png",
     projectImages: [
       "/images/project/booklandia-site1.png",
@@ -154,7 +184,7 @@ const PROJECTS_DATA = [
     name: "Booklandia Application",
     category: "application",
     url: "https://www.youtube.com/watch?v=EPmKaRmBiyI&feature=youtu.be",
-    desc: "Is an educational app empowering children through reading. It enhance the way kids read books, using the latest technology of AR and 3D models, Story books can transform into interactive materials and help the kids to deeply understand the story. Booklandia aim to enhance the kids reads books and encourage them to read more, by developing an application that can run both android and IOS platform, Booklandia will educate and entertain kids by importing virtual world into real world.",
+    desc: "Is an educational app empowering children through reading. It enhance the way kids read books, using the latest technology of AR and 3D models, Story books can transform into interactive materials and help the kids to deeply understand the story. Booklandia aim to enhance the kids reads books and encourage them to read more, by developing an application that can run both android and IOS platform, Booklandia will educate and entertain kids by importing virtual world into real world. Developed using Unity and Vuforia",
     coverImage: "images/works/booklandia.png",
     projectImages: [
       "/images/project/booklandia1.png",
