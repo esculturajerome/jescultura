@@ -1,12 +1,13 @@
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Gallery({ images }) {
   const propsSpring = useSpring({
     opacity: 1,
     from: { opacity: 0 },
   });
+  const [loaded, setLoaded] = useState(false);
 
   if (images) {
     return (
@@ -28,6 +29,8 @@ export default function Gallery({ images }) {
                   objectFit="cover"
                   objectPosition="top"
                   priority
+                  className={loaded ? "unblur" : ""}
+                  onLoadingComplete={() => setLoaded(true)}
                 />
               </div>
             </a>
