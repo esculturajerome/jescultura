@@ -3,8 +3,8 @@ export default function Contacts() {
     {
       id: 1,
       title: "Email",
-      url: "mailto:jerome@jescultura.com",
-      text: "jerome@jescultura.com",
+      url: "mailto:esculturajerome@gmail.com",
+      text: "esculturajerome@gmail.com",
     },
     {
       id: 2,
@@ -21,8 +21,8 @@ export default function Contacts() {
     {
       id: 1,
       title: "Whatsapp",
-      url: "https://api.whatsapp.com/send?phone=+639566754237",
-      text: "+639566754237",
+      url: "https://wa.me/qr/LCBFQ5AOKYUCD1",
+      text: "+6585626116",
     },
   ];
   return (

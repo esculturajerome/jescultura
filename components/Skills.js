@@ -5,9 +5,9 @@ function Skills() {
     "ReactJS",
     "NextJS",
     "Gatsby",
+    "Drupal",
     "WordPress",
     "PHP",
-    "Drupal",
     "Netlify CMS",
   ];
 
@@ -20,18 +20,17 @@ function Skills() {
     "Adobe Creative Cloud",
   ];
 
-  const Tools2 = [
+  const Tools = [
+    "Node.js",
+    "Redux",
+    "Git",
     "GitHub",
     "Bitbucket",
     "Jira",
-    "Docker",
-    "Kubernetes",
     "MongoDB",
   ];
-
-  const Tools = ["Node.js", "Express", "Redux", "MySQL", "NoSQL", "Git"];
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 mt-12 gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-3 mt-12 gap-4">
       <ul>
         {technicals.map((item, i) => (
           <li key={i} className="whitespace-nowrap text-sm">
@@ -48,13 +47,6 @@ function Skills() {
       </ul>
       <ul className="">
         {Tools.map((item, i) => (
-          <li key={i} className="whitespace-nowrap text-sm">
-            {item},
-          </li>
-        ))}
-      </ul>
-      <ul className="">
-        {Tools2.map((item, i) => (
           <li key={i} className="whitespace-nowrap text-sm">
             {item},
           </li>

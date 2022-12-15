@@ -1,5 +1,5 @@
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Contacts from "./Contacts";
 
@@ -8,11 +8,7 @@ import logo from "../public/images/logo.png";
 
 export default function SideBar() {
   const router = useRouter();
-
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   router.push("/");
-  // };
+  const [loaded, setLoaded] = useState(false);
 
   const handleClick = (e, url) => {
     e.preventDefault();

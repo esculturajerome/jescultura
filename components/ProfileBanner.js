@@ -37,10 +37,14 @@ export default function ProfileBanner() {
             software and programming languages that create it.
           </p>
           <p className="mt-8 text-sm lg:text-base">
-            I am a web developer with a passion for graphic and web design. With
-            a great deal of experience under my belt using web technologies like
-            ReactJS and NextJS. By participating in various youth programs for
-            an international non-government organization, I have developed an
+            I am a{" "}
+            <span className="underline font-medium underline-offset-4">
+              Web Consultant
+            </span>{" "}
+            with a passion for graphic and web design. With a great deal of
+            experience under my belt using web technologies like ReactJS and
+            NextJS. By participating in various youth programs for an
+            international non-government organization, I have developed an
             outstanding communication and management skills.
           </p>
         </div>

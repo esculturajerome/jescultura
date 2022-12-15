@@ -3,18 +3,19 @@ import WorkDetails from "./WorkDetails";
 
 function WorkHistory() {
   const WorkHistory = [
-    // {
-    //   name: "Deloitte Consulting",
-    //   department: "Deloitte Consulting Philippine Delivery Center",
-    //   position: "Web Consultant",
-    //   date: "February 2022 — Present",
-    //   details: [
-    //     "Developed MVPs website using NextJS and Tailwind",
-    //     "Designed and Developed APIs",
-    //     "Actively focus on developing effective communication and relationship-building skills, with stakeholders, clients and team",
-    //     "Work effectively in diverse teams within a highly inclusive team culture where everyone is supported, respected and recognized for their contribution",
-    //   ],
-    // },
+    {
+      name: "Deloitte Consulting",
+      department: "Deloitte Consulting Philippine Delivery Center",
+      position: "Web Consultant",
+      date: "February 2022 — Present",
+      details: [
+        "Developed MVPs website using NextJS and Tailwind",
+        "Worked closely with clients to determine the scope of website development projects",
+        "Troubleshooting, testing, and demonstrating website prototypes",
+        "Actively focus on developing effective communication and relationship-building skills, with stakeholders, clients and team",
+        "Keeping up to date with developments, technologies, and trends in website design",
+      ],
+    },
     {
       name: "International Business Machine (IBM)",
       department: "IBM Business Services",
@@ -37,7 +38,7 @@ function WorkHistory() {
       details: [
         "Developed new features and support team of 5 people focusing on website integration and conversion to Angular Framework for Canstar Australia",
         "Developed frontend website architecture and designed user interactions",
-        "Designed and Developed APIs",
+        "Overseeing the live deployment of the website and enhancing the website's performance",
       ],
       awards: ["Received a Developer of the Month award — January 2019"],
     },
