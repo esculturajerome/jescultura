@@ -7,6 +7,7 @@ export default function Gallery({ images }) {
     opacity: 1,
     from: { opacity: 0 },
   });
+  const [loaded, setLoaded] = useState(false);
 
   const [loaded, setLoaded] = useState(false);
 
@@ -31,7 +32,11 @@ export default function Gallery({ images }) {
                   objectFit="cover"
                   objectPosition="top"
                   priority
+<<<<<<< HEAD
                   // className={loaded ? "unblur" : ""}
+=======
+                  className={loaded ? "unblur" : ""}
+>>>>>>> 1d79c8f0f25816c31ee9cafffa74616f67a1b40d
                   onLoadingComplete={() => setLoaded(true)}
                 />
 
