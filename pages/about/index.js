@@ -16,7 +16,7 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://jescultura.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.af7a9fb2.jpeg&w=3840&q=75"
+          content="https://jescultura.com/images/profile.jpeg"
         />
       </Head>
       <ProfileBanner />
