@@ -17,10 +17,13 @@ export default function ProjectDetailPage() {
     <div className="px-4 lg:pt-8 lg:px-8">
       <Head>
         <title>Jerome Escultura | {projectCategory}</title>
+        <meta property="og:title" content="Jerome Escultura" key="title" />
+        <meta name="description" content="Here are my projects" />
+        <meta property="og:url" content="https://jescultura.com/" />
+        <meta property="og:type" content="website" />
         <meta
-          property="og:title"
-          content={`Here are my ${projectCategory} projects`}
-          key="title"
+          property="og:image"
+          content="https://jescultura.com/images/project/booklandia-site1.png"
         />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-5">

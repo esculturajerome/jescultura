@@ -18,7 +18,18 @@ export default function ProjectDetailPage() {
     <div className="px-4 lg:pt-8 lg:px-8">
       <Head>
         <title>Jerome Escultura | {project.name}</title>
-        <meta property="og:title" content={project.desc} key={project.name} />
+        <meta
+          property="og:title"
+          content="Jerome Escultura | Projects"
+          key="title"
+        />
+        <meta name="description" content="Here are my projects" />
+        <meta property="og:url" content="https://jescultura.com/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://jescultura.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.af7a9fb2.jpeg&w=3840&q=75"
+        />
       </Head>
 
       <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5">

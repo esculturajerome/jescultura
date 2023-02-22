@@ -21,8 +21,8 @@ export default function Contacts() {
     {
       id: 1,
       title: "Whatsapp",
-      url: "https://wa.me/qr/LCBFQ5AOKYUCD1",
-      text: "+6585626116",
+      url: "https://api.whatsapp.com/send?phone=+639566754237",
+      text: "+639566754237",
     },
   ];
   return (
