@@ -61,8 +61,8 @@ const PROJECTS_DATA = [
     dateCreated: "2020-06",
     name: "Romblon National Institute of Technology",
     category: "website",
-    url: "https://rnit-tesda.tech/",
-    desc: "Designed, developed and host a website using Wordpress and Godaddy to help their students inquire and enroll online. Developed using Gatsby, Tailwind and Netlify CMS",
+    url: "https://rnit-tesda.org/",
+    desc: "Designed, developed and host a website using Wordpress and Godaddy to help their students inquire and enroll online. Developed using NextJS, Tailwind and Netlify CMS",
     coverImage: "images/works/rnit.png",
     projectImages: [
       "/images/project/rnit1.png",
