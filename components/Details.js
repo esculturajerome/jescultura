@@ -23,7 +23,7 @@ export default function Details(props) {
       <p className="capitalize font-light text-[#bfbfbf]">{category}</p>
       <p className="font-light pr-16">{desc}</p>
       <div className="flex justify-between pr-6 lg:pr-28">
-        <div>
+        {/* <div>
           {convertedDate == "Invalid Date" ? (
             <>
               <h5 className="text-sm font-light mb-4">Status</h5>
@@ -35,11 +35,11 @@ export default function Details(props) {
               <p className="font-light">{convertedDate}</p>
             </Fragment>
           )}
-        </div>
+        </div> */}
         {url && (
           <div>
             <h5 className="text-sm font-light mb-4 flex gap-2 items-center">
-              Link
+              Visit the Link
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4"

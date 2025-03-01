@@ -7,7 +7,7 @@ function WorkHistory() {
       name: "Deloitte Consulting",
       department: "Deloitte Consulting Philippine Delivery Center",
       position: "Web Consultant",
-      date: "February 2022 — Present",
+      date: "February 2022",
       details: [
         "Developed MVPs website using NextJS and Tailwind",
         "Worked closely with clients to determine the scope of website development projects",

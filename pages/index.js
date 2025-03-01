@@ -7,7 +7,7 @@ export default function Home() {
   const AllProjects = getAllProjects();
 
   return (
-    <div className="px-4 lg:pt-8 lg:px-8 font-Roboto">
+    <div className="p-8 max-w-7xl mx-auto font-Roboto">
       <Head>
         <title>Jerome Escultura</title>
         <meta
@@ -20,7 +20,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://jescultura.com/images/profile.jpeg"
+          content="https://jescultura.com/images/profile.png"
         />
       </Head>
       <div className="grid grid-cols-1 lg:grid-cols-5">

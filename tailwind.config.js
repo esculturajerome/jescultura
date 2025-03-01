@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "profile-bg": "url('/images/profile.jpeg')",
+        "profile-bg": "url('/images/profile.png')",
       },
       colors: {
         mainColor: "#48ba86",

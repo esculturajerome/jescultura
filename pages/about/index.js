@@ -3,7 +3,7 @@ import ProfileBanner from "../../components/ProfileBanner";
 
 export default function About() {
   return (
-    <div className="font-Roboto">
+    <div className="p-8 max-w-7xl mx-auto font-Roboto">
       <Head>
         <title>Jerome Escultura | About Me</title>
         <meta
@@ -16,7 +16,7 @@ export default function About() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://jescultura.com/images/profile.jpeg"
+          content="https://jescultura.com/images/profile.png"
         />
       </Head>
       <ProfileBanner />

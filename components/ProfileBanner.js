@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import WorkHistory from "./WorkHistory";
 import Skills from "./Skills";
+import profilePic from "../public/images/profile.png";
 
 export default function ProfileBanner() {
   const router = useRouter();
@@ -25,13 +26,21 @@ export default function ProfileBanner() {
   });
 
   return (
-    <main className="p-8 lg:px-24 font-light">
+    <main className="font-light">
       <animated.div
         style={SpringDelay}
-        className="w-full grid md:grid-cols-5 gap-2 md:gap-8 items-center"
+        className="w-full grid lg:grid-cols-5 gap-2 md:gap-8 items-center justify-items-center"
       >
-        <div className="md:col-span-2 h-[400px] w-full bg-profile-bg bg-cover bg-no-repeat bg-center" />
-        <div className="md:col-span-3">
+        <div className="md:col-span-2 w-[180px] md:w-[250px]">
+          <Image
+            src={profilePic}
+            alt="Jerome Profile"
+            onClick={(e) => handleClick(e, "/")}
+            className="cursor-pointer hover:opacity-70"
+            priority
+          />
+        </div>
+        <div className="md:col-span-2 md:col-start-3">
           <p className="mt-8">
             My passion is web development and design, and the ever-changing
             software and programming languages that create it.
@@ -41,11 +50,7 @@ export default function ProfileBanner() {
             <span className="underline font-medium underline-offset-4">
               Web Consultant
             </span>{" "}
-            with a passion for graphic and web design. With a great deal of
-            experience under my belt using web technologies like ReactJS and
-            NextJS. By participating in various youth programs for an
-            international non-government organization, I have developed an
-            outstanding communication and management skills.
+            specializing in front-end development and proficient in tools like React, Next.js, and CMS platforms such as WordPress. With a strong focus on creating responsive, user-friendly interfaces, I bring a comprehensive understanding of web development, from crafting seamless digital experiences to optimizing performance and managing technical solutions.
           </p>
         </div>
       </animated.div>

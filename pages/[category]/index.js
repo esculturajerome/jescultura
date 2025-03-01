@@ -14,7 +14,7 @@ export default function ProjectDetailPage() {
   }
 
   return (
-    <div className="px-4 lg:pt-8 lg:px-8">
+    <div className="p-8 max-w-7xl mx-auto font-Roboto">
       <Head>
         <title>Jerome Escultura | {projectCategory}</title>
         <meta property="og:title" content="Jerome Escultura" key="title" />
